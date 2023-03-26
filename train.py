@@ -49,7 +49,7 @@ transform = transforms.Compose([
     transforms.ToTensor()
 ])
 
-# Load the train amd test datasets
+# Load the train and test datasets
 train_set = SegmentationDataset(train_imgs, train_masks, transform)
 test_set = SegmentationDataset(test_imgs, test_masks, transform)
 print('Train images: {}\n Test images: {}'.format(len(train_set), len(test_set)))
